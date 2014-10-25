@@ -65,5 +65,13 @@ h1,h2,h3 {
 	padding: 0px;
 }
 
+.hero-container {
+	text-align: center;
+	margin-top: 40px;
+}
 
+.appstore {
+	display: block;
+	margin-top: 50px;
+}
 

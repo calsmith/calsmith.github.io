@@ -79,6 +79,7 @@ h2 {
 .appstore {
 	display: block;
 	margin-top: 50px;
+	text-decoration: none;
 }
 
 ul {
@@ -93,6 +94,14 @@ ul {
 	margin-bottom: 50px;
 }
 
+.splash {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	max-width: 764px;
+}
+
 @media screen and (max-width: 1000px) {
 	.page {
 		width: 100%;
@@ -100,5 +109,8 @@ ul {
 	img.page-logo {
 		max-width: 424px;
 		width: 70%
+	}
+	.splash {
+		width: 90%;
 	}
 }

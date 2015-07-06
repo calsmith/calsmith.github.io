@@ -1,0 +1,23 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Helvetica Neue", Helvetica, 'BrownBold', Arial, "Lucida Grande", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	height: 100%;
+	color: #383838;
+}
+
+h1,h2,h3 {
+	font-family: Georgia;
+	letter-spacing: -1px;
+}
+
+.page {
+	margin: auto;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	max-width: 800px;
+}

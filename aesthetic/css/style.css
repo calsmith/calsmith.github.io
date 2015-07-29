@@ -1,7 +1,7 @@
 body {
 	background-color: white;
 	margin: 0px;
-	margin-top: 120px;
+	margin-top: 110px;
 	padding: 0px;
 	font-family: "Helvetica Neue", Helvetica, 'BrownBold', Arial, "Lucida Grande", sans-serif;
 	font-size: 16px;
@@ -61,6 +61,39 @@ h1,h2,h3 {
 	max-width: 900px;
 }
 
+.center {
+	text-align: center;
+}
+
+.footer {
+	margin-top: 70px;
+	margin-bottom: 30px;
+	font-size: 12px;
+	color: #9b9b9b;
+	text-align: center;
+}
+
+.hero {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.button {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: auto;
+	padding: 10px 40px;
+	width: intrinsic;
+}
+
+.button:hover {
+	background-color: #fcfcfc;
+}
+
+.button.hero-button {
+	margin-bottom: 80px;
+	display: block;
+}
 
 @media screen and (max-width: 800px) {
 	.links {

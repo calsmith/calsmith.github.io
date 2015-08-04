@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>aesthetic - Feedback</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="aesthetic feedback">
+	<link href="../css/style.css" rel="stylesheet"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="links">
+			<a href="http://madebycalsmith.com/aesthetic/"><img src="../img/logo.png" alt="aesthetic" draggable="false" class="logo"></a>
+		</div>
+	</div>
+	<div class="page">
+		<h1>App Support</h1>
+		<p>We want to build the best app ever. If you can't find the answer to your question below, you can <a href="mailto:callumnsmith@gmail.com">email us directly</a>.</p>
+		<p>Happy swiping!</p>
+		
+		
+		<div class="topic">
+			<h2>I forgot my password <div class="toggle">+</div></h2>
+			<div class="content">
+				Head over to the <a href="../recover/index.html">account recovery page</a> and come back. We miss you!
+			</div>
+		</div>
+		
+		<div class="topic">
+			<h2>I want to report someone <div class="toggle">+</div></h2>
+			<div class="content">
+				Reporting questionable, inappropriate or explicit content on aesthetic is easy. From a user's profile, tap the three dot button (...) and select 'Report' from the popup menu. The user will be investigated by our team.
+			</div>
+		</div>
+		
+		<div class="topic">
+			<h2>How is my Instagram used? <div class="toggle">+</div></h2>
+			<div class="content">
+				Your trust is our number one priority.<br>We use the official Instagram API so we never have access to your email or password and we never post to your account. We display your Instagram posts alongside your aesthetic profile so others can discover your posts. We don't store your Instagram photos and you maintain ownership of all content uploaded to our servers.<br><br>
+				You can revoke access at any time in <a href="https://instagram.com/accounts/manage_access/">Instagram settings</a>.
+			</div>
+		</div>
+		
+		<div class="topic">
+			<h2>I want to delete my profile <div class="toggle">+</div></h2>
+			<div class="content">
+				Gone so soon! :-(<br>
+				We update the app every week with improvements and new features, don't miss out on discovering great people!
+				<br>
+				Please <a href="#" id="deleteAccount">contact us</a> from the email address you signed up with and let us know your reason for deleting. We'll use this information to improve the app in the future.
+				<br><br>
+				We hope to see you again soon!
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<p><a href="http://madebycalsmith.com/aesthetic/terms/">Terms</a> <a href="http://madebycalsmith.com/aesthetic/feedback/">Feedback</a> <a href="http://madebycalsmith.com/aesthetic/">Download</a></p>
+			&copy; 2015 an internet experiment
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var id;
+		
+		$().ready(function () {
+			id = getURLParameter("id");
+		});
+		
+		$(".topic h2").click(function () {
+			var header = $(this);
+			var content = header.next();
+			var toggle = header.find(".toggle");
+
+			content.slideToggle(500, function () {
+				toggle.text(function () {
+					return content.is(":visible") ? "-" : "+";
+				});
+			});		
+		});
+		
+		$("#deleteAccount").click(function() {
+			alert("hi");
+			location.href = "mailto:callumnsmith@gmail.com?subject=aesthetic: delete account&body=(User id: " + id + "). My reason for leaving: ";
+		});
+		
+		
+		function getURLParameter(name) {
+			return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+		}
+		
+	</script>
+</body>
+</html>

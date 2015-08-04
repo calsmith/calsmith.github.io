@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'SerifBody';
+    font-style: normal;
+    font-weight: 300;
+    src: url(serif-reg.eot#iefix) format("embedded-opentype"), url(serif-reg.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'SerifBody';
+    font-style: normal;
+    font-weight: 700;
+    src: url(serif-bold.eot#iefix) format("embedded-opentype"), url(serif-bold.woff) format("woff");
+}
+
 body {
 	background-color: white;
 	margin: 0px;
 	margin-top: 110px;
 	padding: 0px;
-	font-family: "Helvetica Neue", Helvetica, 'BrownBold', Arial, "Lucida Grande", sans-serif;
+	font-family: "SerifBody", "Helvetica Neue", Helvetica, 'BrownBold', Arial, "Lucida Grande", sans-serif, "TiemposHeadline";
 	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
@@ -17,6 +31,7 @@ a {
 }
 
 h1,h2,h3 {
+	margin-top: 30px;
 	font-family: Georgia;
 	letter-spacing: -1px;
 	line-height: 1;

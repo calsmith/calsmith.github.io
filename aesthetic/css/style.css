@@ -95,16 +95,33 @@ h1,h2,h3 {
 	margin: auto;
 }
 
-.button {
+.button, input[type=submit] {
 	border: 1px solid black;
-	border-radius: 5px;
+	border-radius: 4px;
 	margin: auto;
 	padding: 10px 40px;
 	width: intrinsic;
+	cursor: pointer;
 }
 
-.button:hover {
-	background-color: #fcfcfc;
+.button:hover, input[type=submit]:hover {
+	background-color: rgba(249, 249, 249, 1);
+}
+
+input[type=submit] {
+	padding: 5px 20px;
+	margin-top: 20px;
+	display: inline-block;
+	text-align: left;
+	border: solid 1px #212121;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.ng-invalid {
+	border-color: #ff5959;
 }
 
 .button.hero-button {
@@ -112,6 +129,29 @@ h1,h2,h3 {
 	display: block;
 }
 
+input[type=submit] {
+	font-family: "SerifBody", "Helvetica Neue", Helvetica, 'BrownBold', Arial, "Lucida Grande", sans-serif, "TiemposHeadline";
+	background-color: white;
+	font-size: 18px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+	background-color: #f8f8f8;
+	font-size: 18px;
+	font-family: "SerifBody", "Helvetica Neue", Helvetica, 'BrownBold', Arial, "Lucida Grande", sans-serif, "TiemposHeadline";
+	height: 25px;
+}
+
+.message {
+	margin-top: 20px;
+	border-radius: 4px;
+	padding: 0px 10px;
+	border: solid 1px #7b7b7b;
+}
+
+.message.success {
+	border: solid 1px #6c9465;
+}
 
 .topic {
 	border-bottom: solid 1px #b3b3b3;

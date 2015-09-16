@@ -1,8 +1,7 @@
 (function() {
 	var app = angular.module('aestheticApp', []);
 	var params = parseParams();
-	var cloud = "http://localhost:8080/";
-	//var cloud = "http://aesthetic-prod.appspot.com/";
+	var cloud = "http://aesthetic-prod.appspot.com/";
 	
 	app.controller('MainController', ['$http', function($http) {
 		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";

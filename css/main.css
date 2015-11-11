@@ -1,0 +1,62 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Karla', Helvetica, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	color: #262626;
+	width: 100%;
+}
+
+.page {
+	margin: auto;
+	margin-top: 30px;
+	width: 100%;
+	max-width: 1100px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-size: 24px;
+	text-decoration: none;
+	color: #0700FF;
+	font-weight: 400;
+}
+
+.highlight {
+	color: #0700FF;
+}
+
+.hero {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom: dotted 2px black;
+}
+
+.links a {
+	display: block;
+	float: left;
+   clear: both;
+   margin-bottom: 15px;
+}
+
+a:hover {
+	border-bottom-style: solid;
+}
+
+
+@media screen and (max-width: 850px) {
+	.hero {
+		font-size: 34px;
+	}
+}

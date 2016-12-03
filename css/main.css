@@ -2,6 +2,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Karla', Helvetica, sans-serif;
+	letter-spacing: -2px;
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
@@ -34,7 +35,7 @@ h1 {
 }
 
 .hero {
-	font-size: 45px;
+	font-size: 42px;
 	font-weight: 700;
 }
 

@@ -114,8 +114,8 @@ a {
 	padding: 20px 20px;
 }
 
-.cell-footer a {
-	
+.mobile-only {
+	display: none;
 }
 
 @media screen and (max-width: 850px) {
@@ -137,5 +137,9 @@ a {
 	
 	.cell-icon {
 		background-size: 25%;
+	}
+	
+	.mobile-only {
+		display: inherit;
 	}
 }

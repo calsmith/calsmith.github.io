@@ -1,18 +1,18 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Karla', Helvetica, sans-serif;
-	letter-spacing: -2px;
+	font-family: 'Cabin', 'Karla', Helvetica, sans-serif;
+	letter-spacing: 0px;
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
-	color: #262626;
+	color: rgba(0, 0, 0, 0.8);
 	width: 100%;
 }
 
 .page {
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-bottom: 30px;
 	width: 100%;
 	max-width: 1100px;
@@ -24,10 +24,11 @@ h1 {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 20px;
-	font-size: 24px;
+	font-size: 28px;
 	text-decoration: none;
 	color: #0700FF;
-	font-weight: 400;
+	font-weight: 700;
+	letter-spacing: -0.5px;
 }
 
 .highlight {
@@ -37,6 +38,7 @@ h1 {
 .hero {
 	font-size: 42px;
 	font-weight: 700;
+	margin-bottom: 60px;
 }
 
 a {
@@ -45,9 +47,13 @@ a {
 	border-bottom: solid 2px black;
 }
 
+a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
 .links {
 	display: block;
-   margin-bottom: 40px;
+	margin-bottom: 70px;
 }
 
 .grid {
@@ -64,14 +70,14 @@ a {
 	height: 288px;
 	margin-right: 16px;
 	margin-bottom: 16px;
-	border: solid 1px #E3E3E3;
 	border-radius: 5px;
-	box-shadow: 0px 3px 5px rgba(29, 29, 31, 0.10);
+	box-shadow:
+		0px 2px 5px rgba(29, 29, 31, 0.20),
+		0px 0px 1px rgba(29, 29, 31, 0.3);
 	position: relative;
 	overflow: hidden;
 	color: white;
 	font-size: 15px;
-	letter-spacing: -0.25px;
 }
 
 .cell a {

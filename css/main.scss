@@ -1,0 +1,244 @@
+@import 'fonts';
+
+$textColor: #3D3D3D;
+$strongTextColor: #000;
+$popColor: #0700FF;
+$weightMedium: 500;
+$weightBold: 600;
+$letterSpacingTight: -1px;
+$letterSpacingDefault: -0.5px;
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'CalFont', Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size: 21px;
+	letter-spacing: $letterSpacingDefault;
+	font-style: normal;
+	font-variant: normal;
+	color: $textColor;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+.margin {
+	margin: auto;
+	width: 100%;
+	max-width: 1100px;
+	padding: 0px 15px;
+	box-sizing: border-box;
+}
+
+@import 'navbar';
+
+.title {
+	font-size: 34px;
+	font-weight: $weightBold;
+	color: $strongTextColor;
+}
+
+.subtitle {
+	font-size: 31px;
+	margin-bottom: 40px;
+}
+
+.impact {
+	background-color: $popColor;
+	width: 100%;
+	padding: 16px 0px;
+	padding-top: 27px;
+	
+	color: white;
+	font-size: 25px;
+	letter-spacing: $letterSpacingTight;
+	font-weight: normal;
+
+	h1 { color: white; }
+	.impact-cell {
+		width: 33%;
+		min-width: 300px;
+		padding-right: 8px;
+		box-sizing: border-box;
+		margin-bottom: 40px;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	.cell-title {
+		font-size: 31px;
+		font-weight: $weightBold;
+		letter-spacing: $letterSpacingTight;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+.project-family {
+	width: 100%;
+	padding: 32px 0px;
+	// padding-top: 27px;
+	background-color: #FCFCFC;
+	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.13),	
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-size: 21px;
+	text-decoration: none;
+	color: $popColor;
+	font-weight: $weightMedium;
+	letter-spacing: $letterSpacingDefault;
+}
+
+.hero {
+	margin-bottom: 116px;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+.page a {
+	color: $strongTextColor;
+	border-bottom: solid 2px black;
+
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: -10px;
+}
+
+.cell {
+	width: 250px;
+	height: 288px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	border-radius: 5px;
+	box-shadow:
+		0px 2px 5px rgba(29, 29, 31, 0.20),
+		0px 0px 1px rgba(29, 29, 31, 0.3);
+	position: relative;
+	overflow: hidden;
+	color: white;
+	font-size: 15px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.025);
+	}
+
+	a {
+		color: white;
+		border-color: white;
+	}
+}
+
+.cell-icon {
+	width: 100%;
+	height: 47%;
+	background-position: center center;
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+
+.cell-body {
+	background-color: #adadad;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 53%;
+	padding: 13px 20px;
+	box-sizing: border-box;
+}
+
+.projects {
+	.cell-title {
+		letter-spacing: 0px;
+		font-weight: $weightBold;
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+}
+
+.cell-footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 20px 20px;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.footer {
+	text-align: center;
+	margin-top: 115px;
+	margin-bottom: 150px;
+
+	.links {
+		margin-top: 20px;
+		display: block;
+		margin-bottom: 70px;
+	}
+}
+
+.mobile-only {
+	display: none;
+}
+
+@media screen and (max-width: 850px) {
+	
+}
+
+@media screen and (max-width: 650px) {
+	.title {
+		font-size: 23px;
+	}
+
+	.subtitle {
+		font-size: 20px;
+	}
+
+	.hero {
+		margin-bottom: 30px;
+	}
+	
+	.cell {
+		width: 100%;
+		margin-right: 8px;
+		justify-content: center;
+	}
+	
+	.cell-icon {
+		background-size: 25%;
+	}
+
+	.footer {
+		margin-top: 50px;
+	}
+	
+	.mobile-only {
+		display: inherit;
+	}
+}

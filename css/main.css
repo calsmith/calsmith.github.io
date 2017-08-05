@@ -64,7 +64,8 @@ body {
 @media screen and (max-width: 650px) {
   .navbar {
     height: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 40px;
+    text-align: center; }
     .navbar .links {
       margin-top: 20px;
       float: none;
@@ -215,7 +216,19 @@ a, a:visited {
     font-size: 20px; }
 
   .hero {
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
+
+  .impact {
+    font-size: 23px; }
+    .impact .cell-title {
+      font-size: 28px; }
+    .impact .impact-cell {
+      margin-bottom: 30px; }
+
+  .projects {
+    justify-content: center; }
+    .projects .cell {
+      width: 80%; }
 
   .cell {
     width: 100%;

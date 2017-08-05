@@ -221,8 +221,28 @@ a, a:visited {
 	}
 
 	.hero {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
+
+	.impact {
+		font-size: 23px;
+		.cell-title {
+			font-size: 28px;
+		}
+
+		.impact-cell {
+			margin-bottom: 30px;
+		}
+	}
+
+	.projects {
+		justify-content: center;
+
+		.cell {
+			width: 80%;
+		}
+	}
+
 	
 	.cell {
 		width: 100%;

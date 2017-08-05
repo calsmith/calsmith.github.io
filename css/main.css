@@ -129,6 +129,8 @@ h1 {
 
 .hero {
   margin-bottom: 116px; }
+  .hero ul {
+    line-height: 1.75; }
 
 a, a:visited {
   text-decoration: none; }

@@ -1,0 +1,21 @@
+.page, .impact, .navbar .links {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+	0% { opacity: 0; }
+	25% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+
+.home {
+	animation: homeIn 2s;    
+}
+
+@keyframes homeIn {
+	20% {
+        padding: 20px;
+        transform: scale(1.2);
+    }
+    100% {}
+}

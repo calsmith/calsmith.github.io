@@ -45,7 +45,7 @@
 @media screen and (max-width: 650px) {
     .navbar {
         height: auto;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         text-align: center;
 
         .links {
@@ -53,6 +53,10 @@
             float: none;
             display: block;
             font-size: 18px;
+
+            a {
+                padding-bottom: 10px;
+            }
         }
     }
 }
